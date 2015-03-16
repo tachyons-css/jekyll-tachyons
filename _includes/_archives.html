@@ -1,0 +1,13 @@
+<article>
+  <h1>Archives</h1>
+  <ul>
+    {% for post in site.posts limit: 25 %}
+      <li>
+        <a href="{{ post.url }}" title="{{post.title}}">
+          <date datetime="{{post.date}}">{{ post.date | date_to_long_string }}</date>
+          {{ post.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</article>

@@ -1,0 +1,17 @@
+{% include _head.html %}
+<body>
+  <article>
+    <!-- This is where the title: in your front matter gets dropped in.-->
+    <h1>
+      {{page.title}}
+    </h1>
+    <!-- This is where post content lives -->
+      {{content}}
+    <!-- end of post content -->
+  </article>
+  {% include _related_posts.html %}
+  {% include _navigation.html %}
+  {% include _footer.html %}
+  {% include _google_analytics.html %}
+</body>
+</html>

@@ -1,0 +1,34 @@
+---
+title: A Post About Coding Things with Examples
+layout: posts
+---
+
+<p>
+  We call it the after after after party.
+</p>
+
+<h2>CSS Code</h2>
+{% highlight css %}
+  .ct-r {
+    text-align:center;
+    @include breakpoint(one-hand) {
+      text-align:left;
+    }
+  }
+{% endhighlight %}
+
+<h2>Ruby Code</h2>
+{% highlight ruby %}
+  class KeychainPromotion
+    def initialize(purchase_process)
+      @purchase_process = purchase_process
+    end
+
+    def sign_up_for_mailing_list(customer)
+      MailingList.add(customer)
+      keychain = Product.find("promo-keychain")
+      @purchase_process.purchase_product(customer,keychain)
+    end
+  end
+{% endhighlight %}
+

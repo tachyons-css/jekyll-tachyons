@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<section class="center mw7">
+  <article>
+    {% for post in site.posts limit: 1 %}
+       <h1>{{ post.title }}</h1>
+      {{ post.content }}
+    {% endfor %}
+  </article>
+  <section>
+    <article>
+      <ul>
+        {% for post in paginator.posts %}
+          <li>
+            <a href="{{ post.url }}" title="{{post.title}}">
+              <date datetime="{{post.date}}">
+                {{ post.date | date_to_long_string }}
+              </date>
+              {{ post.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      <p>...</a></p>
+    </article>
+  </section>
+</section>
