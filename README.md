@@ -5,19 +5,17 @@ config. Still under development. Pull requests encouraged && accepted.
 
 # Get Started
 ```
-git clone git@github.com:mrmrs/jkl.git && cd jkl && rake dev
+git clone git@github.com:mrmrs/jkl-tachyons.git && cd jkl-tachyons && npm
+install && npm start
 ```
-
 That should do the trick. More verbose explanations below.
 
-
-
-## Rake tasks
-
-#### rake dev
+You'll also want to open another tab in terminal and run
 ```
 jekyll serve --watch
 ```
+
+This will build the site.
 
 This sets up a jekyll server for dev on port 4000. Site is regenerated everytime you save a file.
 NOTE: Changing _config.yml will require a restart of the jekyll server to see changes.
@@ -26,19 +24,6 @@ To restart server, go to terminal tab that server is running in then press
 ctrl+C ⇧  enter
 ```
 
-#### rake sass
-```
-sass --watch _sass:css
-```
-
-Starts Sass polling to regenerate css on file save.
-
-#### rake minify
-```
-sass --watch _sass:css --style compressed
-```
-
-Starts Sass polling to regenerate css on file save - minifies the output.
 
 ## Notes
 Example posts are in jkl/_posts/
