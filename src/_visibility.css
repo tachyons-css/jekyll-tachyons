@@ -2,6 +2,11 @@
 
    VISIBILITY
 
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
 */
 
 
@@ -43,3 +48,4 @@
     clip: rect(1px, 1px, 1px, 1px);
   }
 }
+

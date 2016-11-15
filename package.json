@@ -1,11 +1,11 @@
 {
   "name": "jkl-tachyons",
-  "version": "1.0.0",
-  "description": "JKL + Tachyons",
+  "version": "1.1.0",
+  "description": "Boilerplate for starting a project with Jekyll and Tachyons",
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mrmrs/tachyons.git"
+    "url": "git://github.com/mrmrs/jkl-tachyons.git"
   },
   "keywords": [
     "css",
@@ -20,44 +20,23 @@
   },
   "devDependencies": {
     "browser-sync": "^1.1.1",
-    "css": "^2.1.0",
-    "css-parse": "^2.0.0",
-    "gulp": "^3.8.2",
-    "gulp-autoprefixer": "0.0.7",
-    "gulp-basswork": "0.0.11",
-    "gulp-csslint": "^0.1.4",
-    "gulp-file-include": "^0.5.1",
-    "gulp-minify-css": "^0.3.5",
-    "gulp-rename": "^1.2.0",
-    "gulp-sass": "^0.7.2",
-    "gulp-shell": "^0.2.8",
-    "gulp-size": "^0.4.0",
-    "gulp-uncss": "^0.4.4",
-    "gulp-util": "^2.2.18",
-    "gulp-watch": "^0.6.8",
-    "lodash": "^2.4.1",
-    "node-sass": "^0.9"
+    "copy-files": "^0.1.0",
+    "immutable-css-cli": "^1.1.1",
+    "tachyons-cli": "^1.0.8",
+    "watch": "^0.19.2"
   },
   "contributors": [
     {
       "name": "adam morse",
       "email": "hi@mrmrs.cc"
-    },
-    {
-      "name": "robert forloine",
-      "url": "http://www.sndsgn.com"
-    },
-    {
-      "name": "david potsiadlo",
-      "url": "http://www.davidpots.com/"
-    },
-    {
-      "name": "tyler benziger",
-      "url": "http://tybenz.com"
     }
   ],
   "scripts": {
-    "start": "gulp",
-    "ast": "gulp generateDocs"
+    "start": "npm run build:watch",
+    "mutations": "immutable-css src/tachyons.css --strict",
+    "build": "npm run build:css && npm run build:minify",
+    "build:css": "tachyons src/tachyons.css > css/tachyons.css",
+    "build:minify": "tachyons src/tachyons.css -m > css/tachyons.min.css",
+    "build:watch": "watch 'npm run build' ./src/"
   }
 }

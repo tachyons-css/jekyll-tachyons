@@ -1,23 +1,34 @@
 /*
 
    BACKGROUND SIZE
+   Docs: http://tachyons.io/docs/themes/background-size/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
 
 */
 
-  .bg-cv  {               background-size: cover; }
-  .bg-cn  {               background-size: contain; }
+/*
+  Often used in combination with background image set as an inline style
+  on an html element.
+*/
+
+  .cover { background-size: cover!important; }
+  .contain { background-size: contain!important; }
 
 @media (--breakpoint-not-small) {
-  .bg-cv-ns {             background-size: cover; }
-  .bg-cn-ns {             background-size: contain; }
+  .cover-ns { background-size: cover!important; }
+  .contain-ns { background-size: contain!important; }
 }
 
 @media (--breakpoint-medium) {
-  .bg-cv-m {              background-size: cover; }
-  .bg-cn-m {              background-size: contain; }
+  .cover-m { background-size: cover!important; }
+  .contain-m { background-size: contain!important; }
 }
 
 @media (--breakpoint-large) {
-  .bg-cv-l {              background-size: cover; }
-  .bg-cn-l {              background-size: contain; }
+  .cover-l { background-size: cover!important; }
+  .contain-l { background-size: contain!important; }
 }

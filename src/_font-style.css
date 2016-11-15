@@ -1,8 +1,29 @@
 /*
 
-   Font Style
+   FONT STYLE
+   Docs: http://tachyons.io/docs/typography/font-style/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
 
 */
 
-.fsn     { font-style: normal; }
-.i       { font-style: italic; }
+.i         { font-style: italic; }
+.fs-normal { font-style: normal; }
+
+@media (--breakpoint-not-small) {
+  .i-ns       { font-style: italic; }
+  .fs-normal-ns     { font-style: normal; }
+}
+
+@media (--breakpoint-medium) {
+  .i-m       { font-style: italic; }
+  .fs-normal-m     { font-style: normal; }
+}
+
+@media (--breakpoint-large) {
+  .i-l       { font-style: italic; }
+  .fs-normal-l     { font-style: normal; }
+}

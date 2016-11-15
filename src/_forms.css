@@ -1,12 +1,16 @@
-/* Forms */
+/*
 
-.input-text {
-  outline: 0;
-  border: 1px solid var(--silver);
+   FORMS
+   
+*/
+
+.input-reset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
-.input-invisible {
-  outline: 0;
+.button-reset::-moz-focus-inner,
+.input-reset::-moz-focus-inner {
   border: 0;
+  padding: 0;
 }
-

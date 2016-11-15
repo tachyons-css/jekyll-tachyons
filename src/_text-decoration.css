@@ -1,24 +1,35 @@
 /*
 
    TEXT DECORATION
+   Docs: http://tachyons.io/docs/typography/text-decoration/
+
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
 
 */
 
-.under  { text-decoration: underline; }
-.none   { text-decoration: none; }
+.strike       { text-decoration: line-through; }
+.underline    { text-decoration: underline; }
+.no-underline { text-decoration: none; }
 
 
 @media (--breakpoint-not-small) {
-  .under-ns  { text-decoration: underline; }
-  .none-ns   { text-decoration: none; }
+  .strike-ns       { text-decoration: line-through; }
+  .underline-ns    { text-decoration: underline; }
+  .no-underline-ns { text-decoration: none; }
 }
 
 @media (--breakpoint-medium) {
-  .under-m  { text-decoration: underline; }
-  .none-m   { text-decoration: none; }
+  .strike-m       { text-decoration: line-through; }
+  .underline-m    { text-decoration: underline; }
+  .no-underline-m { text-decoration: none; }
 }
 
 @media (--breakpoint-large) {
-  .under-l  { text-decoration: underline; }
-  .none-l   { text-decoration: none; }
+  .strike-l       { text-decoration: line-through; }
+  .underline-l {    text-decoration: underline; }
+  .no-underline-l { text-decoration: none; }
 }

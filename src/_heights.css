@@ -1,109 +1,124 @@
 /*
 
-   Heights
+   HEIGHTS
+   Docs: http://tachyons.io/docs/layout/heights/
+
+   Base:
+     h = height
+     min-h = min-height
+     min-vh = min-height vertical screen height
+     vh = vertical screen height
+
+   Modifiers
+     1 = 1st step in height scale
+     2 = 2nd step in height scale
+     3 = 3rd step in height scale
+     4 = 4th step in height scale
+     5 = 5th step in height scale
+
+     -25   = literal value 25%
+     -50   = literal value 50%
+     -75   = literal value 75%
+     -100  = literal value 100%
+
+     -auto = string value of auto
+     -inherit = string value of inherit
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
 
 */
 
 /* Height Scale */
 
-.h1 {  height: 1rem; }
-.h2 {  height: 2rem; }
-.h3 {  height: 4rem; }
-.h4 {  height: 8rem; }
-.h5 {  height: 16rem; }
+.h1 { height: 1rem; }
+.h2 { height: 2rem; }
+.h3 { height: 4rem; }
+.h4 { height: 8rem; }
+.h5 { height: 16rem; }
 
-.h-10 { height:  10%; }
-.h-20 { height:  20%; }
-.h-25 { height:  25%; }
-.h-40 { height:  40%; }
-.h-50 { height:  50%; }
-.h-60 { height:  60%; }
-.h-75 { height:  75%; }
-.h-80 { height:  80%; }
+/* Height Percentages - Based off of height of parent */
+
+.h-25 {  height:  25%; }
+.h-50 {  height:  50%; }
+.h-75 {  height:  75%; }
 .h-100 { height: 100%; }
+
+.min-h-100 { min-height: 100%; }
+
+/* Screen Height Percentage */
+
+.vh-25 {  height:  25vh; }
+.vh-50 {  height:  50vh; }
+.vh-75 {  height:  75vh; }
+.vh-100 { height: 100vh; }
+
+.min-vh-100 { min-height: 100vh; }
+
 
 /* String Properties */
 
-.h-bb { height: border-box; }
-.h-cb { height: content-box; }
-.h-mx { height: max-content; }
-.h-mn { height: min-content; }
-.h-av { height: available; }
-.h-fc { height: fit-content; }
-.h-at { height: auto; }
-.h-i {  height: inherit; }
+.h-auto {     height: auto; }
+.h-inherit {  height: inherit; }
 
 @media (--breakpoint-not-small) {
-  .h-1-ns {  height: 1rem; }
-  .h-2-ns {  height: 2rem; }
-  .h-3-ns {  height: 4rem; }
-  .h-4-ns {  height: 8rem; }
-  .h-5-ns {  height: 16rem; }
-  .h-10-ns { height:  10%; }
-  .h-20-ns { height:  20%; }
-  .h-25-ns { height:  25%; }
-  .h-40-ns { height:  40%; }
-  .h-50-ns { height:  50%; }
-  .h-60-ns { height:  60%; }
-  .h-75-ns { height:  75%; }
-  .h-80-ns { height:  80%; }
+  .h1-ns {  height: 1rem; }
+  .h2-ns {  height: 2rem; }
+  .h3-ns {  height: 4rem; }
+  .h4-ns {  height: 8rem; }
+  .h5-ns {  height: 16rem; }
+  .h-25-ns { height: 25%; }
+  .h-50-ns { height: 50%; }
+  .h-75-ns { height: 75%; }
   .h-100-ns { height: 100%; }
-  .h-bb-ns { height: border-box; }
-  .h-cb-ns { height: content-box; }
-  .h-mx-ns { height: max-content; }
-  .h-mn-ns { height: min-content; }
-  .h-av-ns { height: available; }
-  .h-fc-ns { height: fit-content; }
-  .h-at-ns { height: auto; }
-  .h-i-ns {  height: inherit; }
+  .min-h-100-ns { min-height: 100%; }
+  .vh-25-ns {  height:  25vh; }
+  .vh-50-ns {  height:  50vh; }
+  .vh-75-ns {  height:  75vh; }
+  .vh-100-ns { height: 100vh; }
+  .min-vh-100-ns { min-height: 100vh; }
+  .h-auto-ns { height: auto; }
+  .h-inherit-ns { height: inherit; }
 }
 
 @media (--breakpoint-medium) {
-  .h1-m {      height: 1rem; }
-  .h2-m {      height: 2rem; }
-  .h3-m {      height: 4rem; }
-  .h4-m {      height: 8rem; }
-  .h5-m {      height: 16rem; }
-  .h-10-m { height:  10%; }
-  .h-20-m { height:  20%; }
-  .h-25-m { height:  25%; }
-  .h-40-m { height:  40%; }
-  .h-50-m { height:  50%; }
-  .h-60-m { height:  60%; }
-  .h-75-m { height:  75%; }
-  .h-80-m { height:  80%; }
+  .h1-m { height: 1rem; }
+  .h2-m { height: 2rem; }
+  .h3-m { height: 4rem; }
+  .h4-m { height: 8rem; }
+  .h5-m { height: 16rem; }
+  .h-25-m { height: 25%; }
+  .h-50-m { height: 50%; }
+  .h-75-m { height: 75%; }
   .h-100-m { height: 100%; }
-  .h-bb-m {    height: border-box; }
-  .h-cb-m {    height: content-box; }
-  .h-mx-m {    height: max-content; }
-  .h-mn-m {    height: min-content; }
-  .h-av-m {    height: available; }
-  .h-fc-m {    height: fit-content; }
-  .h-at-m {    height: auto; }
-  .h-i-m {     height: inherit; }
+  .min-h-100-ns { min-height: 100%; }
+  .vh-25-m {  height:  25vh; }
+  .vh-50-m {  height:  50vh; }
+  .vh-75-m {  height:  75vh; }
+  .vh-100-m { height: 100vh; }
+  .min-vh-100-m { min-height: 100vh; }
+  .h-auto-m { height: auto; }
+  .h-inherit-m { height: inherit; }
 }
 
 @media (--breakpoint-large) {
-  .h1-l {      height: 1rem; }
-  .h2-l {      height: 2rem; }
-  .h3-l {      height: 4rem; }
-  .h4-l {      height: 8rem; }
-  .h5-l {      height: 16rem; }
-  .h-10-l {    height:  10%; }
-  .h-20-l {    height:  20%; }
-  .h-25-l {    height:  25%; }
-  .h-40-l {    height:  40%; }
-  .h-50-l {    height:  50%; }
-  .h-60-l {    height:  60%; }
-  .h-75-l {    height:  75%; }
-  .h-80-l {    height:  80%; }
-  .h-100-l {   height: 100%; }
-  .h-bb-l {    height: border-box; }
-  .h-cb-l {    height: content-box; }
-  .h-mx-l {    height: max-content; }
-  .h-mn-l {    height: min-content; }
-  .h-av-l {    height: available; }
-  .h-fc-l {    height: fit-content; }
-  .h-at-l {    height: auto; }
-  .h-i-l {     height: inherit; }
+  .h1-l { height: 1rem; }
+  .h2-l { height: 2rem; }
+  .h3-l { height: 4rem; }
+  .h4-l { height: 8rem; }
+  .h5-l { height: 16rem; }
+  .h-25-l { height: 25%; }
+  .h-50-l { height: 50%; }
+  .h-75-l { height: 75%; }
+  .h-100-l { height: 100%; }
+  .min-h-100-l { min-height: 100%; }
+  .vh-25-l {  height:  25vh; }
+  .vh-50-l {  height:  50vh; }
+  .vh-75-l {  height:  75vh; }
+  .vh-100-l { height: 100vh; }
+  .min-vh-100-l { min-height: 100vh; }
+  .h-auto-l { height: auto; }
+  .h-inherit-l { height: inherit; }
 }
