@@ -5,8 +5,10 @@ config. Still under development. Pull requests encouraged && accepted.
 
 # Get Started
 ```
-git clone git@github.com:mrmrs/jkl-tachyons.git && cd jkl-tachyons && npm
-install && npm start
+git clone https://github.com/tachyons-css/jekyll-tachyons.git
+cd jekyll-tachyons
+npm install
+npm start
 ```
 That should do the trick. More verbose explanations below.
 
