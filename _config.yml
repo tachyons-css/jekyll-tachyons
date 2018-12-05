@@ -1,10 +1,10 @@
 # This will be the first part of the title tag for your site <title> site.name + page.title </title>
-name: "JKL"
+name: "Garantio"
 # Populates the meta description for the site. Should be under 150 characters for best SEO purposes.
-descripiton: "Light-weight scaffolding for a Jekyll project with Tachyons"
+descripiton: "We’re building a warranty registry for every kind of product. With blockchain, it will be global and decentralized."
 
 # Owner (organization or individual) of site content
-author: "mrmrs"
+author: "Garantio"
 
 #url: http://
 url: "https://garantio.github.io/garantio-site/"
