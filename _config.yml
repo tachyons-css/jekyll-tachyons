@@ -7,7 +7,7 @@ descripiton: "Light-weight scaffolding for a Jekyll project with Tachyons"
 author: "mrmrs"
 
 #url: http://
-url: "http://localhost:4000"
+url: "https://garantio.github.io/garantio-site/"
 
 # Your UA tracking number (i.e 35858753-1) for Google Analytics.
 # If you comment this out, or don't fill out this parameter - Google analytics won't be included.
