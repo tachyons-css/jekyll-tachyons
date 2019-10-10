@@ -22,7 +22,7 @@ permalink: pretty
 # Variable format options for URL styles below
 # pretty                                          => /2009/04/29/slap-chop/index.html
 # /:month-month:day-:year/:title.html/            => 04-29-2009/slap-chop.html
-# /blog/:yearr/:month/:day/:title                 => /blog/2009/04/29/slap-chop/index.html
+# /blog/:year/:month/:day/:title                 => /blog/2009/04/29/slap-chop/index.html
 
 # UnComment once you have pygments installed. Used for code syntax highlighting.
 #pygments: true
